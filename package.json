@@ -1,0 +1,49 @@
+{
+  "name": "network-insight",
+  "version": "1.0.0",
+  "description": "Comprehensive network and client information utilities for Node.js with TypeScript support",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "prepublishOnly": "npm run build && npm run test"
+  },
+  "keywords": [
+    "network",
+    "ip",
+    "geolocation",
+    "express",
+    "middleware",
+    "typescript"
+  ],
+  "author": "Raushan Kumar",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/jest": "^29.5.8",
+    "typescript": "^5.3.0",
+    "ts-node": "^10.9.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "@types/supertest": "^2.0.12",
+    "supertest": "^6.3.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/network-insight.git"
+  }
+}
